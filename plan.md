@@ -1,15 +1,12 @@
 # Plan
 
-Fyll ut før du koder. Vis til lærer.
+Bestem tre ting før du koder. Pseudokode, flytskjema eller punktliste — du velger.
+
+**Vis planen til lærer før du begynner å kode.**
+
+## Hvordan ser algoritmen din ut?
 
 ## Hvordan jeg skal få lista sortert
-
-(pseudokode, flytskjema eller punktliste — det viktige er at du selv skjønner
-den i morgen)
-
-## Hvor langt jeg sikter
-
-(A, A+B eller alt)
 
 ## Hvordan jeg vet at en del er ferdig
 
