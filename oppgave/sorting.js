@@ -3,7 +3,7 @@
 //
 // Regler:
 // - Skriv sorteringa selv. Ikke bruk .sort()
-// - Returner en NY liste. Lista som kom inn, skal være uendret
+// - Returner en NY liste. Listen som kom inn, skal være uendret
 // - Sorteringa skal stå ett sted, ikke tre
 
 // Del A: tall, minst først
