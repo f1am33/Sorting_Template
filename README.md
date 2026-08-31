@@ -4,6 +4,5 @@
 2. Fyll inn TODO i `oppgave/sorting.js`. Del A er minstekravet, B og C trekker opp.
 3. Test: åpne `test.html` i nettleser og trykk "Kjør tester", eller `node test.js`.
 4. Commit hver gang noe nytt virker. Legg skjermbilde av testkjøringa i `skjermbilder/`.
-5. Svar på spørsmålene i `svar.md` til slutt.
 
 Ikke bruk `.sort()`. Returner en ny liste. Sorteringa skal stå ett sted, ikke tre.
