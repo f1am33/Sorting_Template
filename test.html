@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Test sortering</title>
+<style>
+  body { font-family: monospace; padding: 2rem; }
+  button { font-size: 1rem; padding: 0.5rem 1rem; cursor: pointer; }
+  .ok { color: green; }
+  .feil { color: red; }
+  .vent { color: #888; }
+  .tittel { font-weight: bold; }
+  #resultat { margin-top: 1.5rem; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+
+<h1>Test sortering</h1>
+<button id="kjor">Kjør tester</button>
+<div id="resultat"></div>
+
+<script src="oppgave/sorting.js"></script>
+<script src="test.js"></script>
+<script>
+document.getElementById("kjor").addEventListener("click", () => {
+  const resultat = document.getElementById("resultat");
+  resultat.textContent = "";
+
+  const { lines } = runAll({ sortNumbers, sortWords, sortMixed });
+
+  const merke = { ok: "OK  ", feil: "FEIL", vent: "    ", tittel: "", tom: "" };
+  const html = lines.map((l) => {
+    if (l.status === "tom") return "";
+    if (l.status === "tittel") return `<span class="tittel">== ${l.text} ==</span>`;
+    return `<span class="${l.status}">${merke[l.status]}</span> ${l.text}`;
+  });
+
+  resultat.innerHTML = html.join("\n");
+});
+</script>
+
+</body>
+</html>
