@@ -1,12 +1,15 @@
 # Plan
 
-Bestem tre ting før du koder. Pseudokode, flytskjema eller punktliste — du velger.
+Det du skriver ned nå, er algoritmen din. En algoritme er en oppskrift: en rekke
+steg som alltid gir samme resultat. Koden kommer etterpå.
+
+Bestem tre ting før du koder. Pseudokode, flytskjema eller punktliste. Du velger.
 
 **Vis planen til lærer før du begynner å kode.**
 
-## Hvordan ser algoritmen din ut?
+## Hvilke steg gjør algoritmen din, i rekkefølge?
 
-## Hvordan jeg skal få lista sortert
+## Hvordan flytter du elementene så de havner riktig?
 
-## Hvordan jeg vet at en del er ferdig
+## Hvordan vet du at lista er ferdig sortert?
 
