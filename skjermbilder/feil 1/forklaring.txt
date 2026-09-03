@@ -1,0 +1,5 @@
+// deklarerte list to ganger, først i selve funksjonen som parameter 
+// - function sortNumbers(list)
+
+// og i tillegg nede i algoritmen
+// - let list [5, 3, 1, 9, 7]

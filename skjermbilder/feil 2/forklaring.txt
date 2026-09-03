@@ -1,0 +1,2 @@
+// Denne feilen oppstod fordi jeg har skrevet 
+// - return arr; inn i løkken (linje 45) istedenfor funksjonen (linje 47).
