@@ -41,6 +41,44 @@ function sortWords(list) {
 
 
 
+// Del C: både tall og ord
+// 1. tall før ord  2. tall minst først  3. ord alfabetisk
+// sortMixed(["banan", 7, "and", 7, -1]) -> [-1, 7, 7, "and", "banan"]
+//
+// Tips: typeof a === "number" sier om noe er et tall.
+function sortMixed(list) {
+  let arr = [...list];
+  let n = list.length;
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n - 1 - i; j++) {
+      let a = arr[j];
+      let b = arr[j + 1];
+      let aIsNum = typeof a === "number";
+      let bIsNum = typeof b === "number";
+      let skalBytte = false;
+      
+      if (aIsNum && !bIsNum) {
+        skalBytte = false;
+      } else if (!aIsNum && bIsNum) {
+        skalBytte = true;
+      } else if (aIsNum && bIsNum) {
+        if (a > b) skalBytte = true;
+      } else {
+        if (a.localeCompare(b, 'no') > 0) skalBytte = true;
+      }
+
+      if (skalBytte) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  } 
+  return arr;
+}
+
+console.log(sortMixed(["banan", 7, "and", 7, -1])); 
 
 
 if (typeof module !== "undefined") {
