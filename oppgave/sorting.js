@@ -25,6 +25,23 @@ function sortNumbers(list) {
   return arr;
 }
 
+sortWords(["ål", "ære", "øy"])
+function sortWords(list) {
+  let arr = [...list]
+  let n = list.length;
+
+  for (let i=0; i < n - 1; i++) {
+    for (let j=0; j < n - i - 1; j++) {
+      if (arr[j].localeCompare(arr[j + 1]) > 0) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+      }
+    }
+  } return arr;
+}
+
+
+
+
 
 if (typeof module !== "undefined") {
   module.exports = { sortNumbers, sortWords, sortMixed };
